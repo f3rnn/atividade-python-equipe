@@ -14,3 +14,6 @@ class Engenheiro(Funcionario):
         return (
             f"{super().__str__()}"
             f"\nCREA: {self.crea}")
+    
+    def _verificar_nome(self, valor):
+        return super()._verificar_nome(valor)

@@ -25,3 +25,15 @@ def test_crea_valido(engenheiro_valido):
 #Validando atributos de endereco
 def test_logradouro_valido(engenheiro_valido):
     assert engenheiro_valido.endereco.logradouro == "Via Alameda"
+
+def test_numero_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.numero == "95"
+
+def test_complemento_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.complemento == "Fim de linha"
+
+def test_uf_valida(engenheiro_valido):
+    assert engenheiro_valido.endereco.uf == UnidadeFederativa.BAHIA
+
+def test_cidade_valida(engenheiro_valido):
+    assert engenheiro_valido.endereco.cidade == "Salvador"

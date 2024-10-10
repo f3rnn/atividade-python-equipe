@@ -6,7 +6,7 @@ class Funcionario(ABC):
         self.nome = self._verificar_nome(nome)
         self.telefone = self._verificar_telefone(telefone)
         self.email = self._verificar_email(email)
-        self.endereco = Endereco
+        self.endereco = endereco
     
     def _verificar_nome(self, nome):
         if not isinstance(nome, str):
